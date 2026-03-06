@@ -1,4 +1,4 @@
-# 🚀 Full Stack Task Management API
+# Full Stack Task Management API
 
 A **full-stack task management application** demonstrating a modern backend API with secure authentication and a React frontend.
 
@@ -8,7 +8,7 @@ This project demonstrates **RESTful API design, authentication, validation, erro
 
 ---
 
-# 🧠 Tech Stack
+# Tech Stack
 
 ## Backend
 
@@ -29,64 +29,9 @@ This project demonstrates **RESTful API design, authentication, validation, erro
 * **Axios** for API requests
 * Simple **responsive UI** for authentication and task CRUD operations
 
----
+# Setup Instructions
 
-# 📂 Project Structure
-
-```
-Full-Stack-API
-│
-├── backend
-│   ├── config
-│   │   ├── db.js
-│   │   └── swagger.js
-│   │
-│   ├── controllers
-│   │   ├── authController.js
-│   │   └── taskController.js
-│   │
-│   ├── middleware
-│   │   ├── authMiddleware.js
-│   │   ├── validators.js
-│   │   └── errorHandler.js
-│   │
-│   ├── models
-│   │   ├── User.js
-│   │   └── Task.js
-│   │
-│   ├── routes
-│   │   ├── authRoutes.js
-│   │   └── taskRoutes.js
-│   │
-│   ├── utils
-│   │   ├── jwt.js
-│   │   └── apiResponse.js
-│   │
-│   └── server.js
-│
-├── frontend
-│   └── src
-│       ├── pages
-│       │   ├── Login.jsx
-│       │   ├── Register.jsx
-│       │   └── Dashboard.jsx
-│       │
-│       ├── components
-│       │   └── Navbar.jsx
-│       │
-│       ├── services
-│       │   └── api.js
-│       │
-│       └── App.jsx
-│
-└── README.md
-```
-
----
-
-# ⚙️ Setup Instructions
-
-## 1️⃣ Backend Setup
+##  Backend Setup
 
 Install dependencies:
 
@@ -152,7 +97,7 @@ http://localhost:5173
 
 ---
 
-# 🔐 Authentication Flow
+# Authentication Flow
 
 1. User registers via **Register page**
 2. User logs in via **Login page**
@@ -166,7 +111,7 @@ Authorization: Bearer <token>
 
 ---
 
-# 📡 API Endpoints
+# API Endpoints
 
 All APIs are versioned under:
 
@@ -176,7 +121,7 @@ All APIs are versioned under:
 
 ---
 
-## 🔑 Authentication
+## Authentication
 
 ### Register User
 
@@ -230,7 +175,7 @@ Response:
 
 ---
 
-# 📋 Task APIs (Protected)
+# Task APIs (Protected)
 
 Authorization header required:
 
@@ -285,7 +230,7 @@ DELETE /api/v1/tasks/:id
 
 ---
 
-# ⚠️ Error Response Format
+# Error Response Format
 
 All errors follow a consistent structure:
 
@@ -296,93 +241,6 @@ All errors follow a consistent structure:
   "data": {}
 }
 ```
-
----
-
-# 📸 Screenshots
-
-Add screenshots of your UI here.
-
-Example:
-
-```
-Login Page
-Register Page
-Dashboard
-Task CRUD Operations
-```
-
----
-
-# 🚀 Scalability Improvements (Future Work)
-
-### Microservices Architecture
-
-Split backend into services:
-
-* **Auth Service**
-* **Task Service**
-* **API Gateway**
-
-Benefits:
-
-* Independent scaling
-* Better maintainability
-* Clear domain separation
-
----
-
-### Redis Caching
-
-Use Redis for:
-
-* Caching frequently accessed task data
-* Token/session management
-* Performance optimization
-
----
-
-### Load Balancing
-
-Run multiple backend instances behind:
-
-* **Nginx**
-* **HAProxy**
-* Cloud load balancers
-
-Benefits:
-
-* High availability
-* Horizontal scalability
-
----
-
-### Docker Deployment
-
-Containerize the application using:
-
-* **Docker**
-* **Docker Compose**
-
-Example services:
-
-```
-backend
-frontend
-mongodb
-redis
-```
-
-For large scale deployments, migrate to **Kubernetes** for:
-
-* Auto scaling
-* Rolling updates
-* Secrets management
-
----
-
-# 👨‍💻 Author
-
 **Kunal Shokeen**
 
 Backend Developer | Full Stack Enthusiast
